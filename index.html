@@ -45,12 +45,13 @@
       background-color: brown;
       ">Introduce</button>
 
-    <audio id="bgMusic" src="Fur-Elise.mp3" loop></audio>
+    <audio id="bgMusic" src="Fur-Elise.mp3" autoplay loop></audio>
 
-<button onclick="
-  document.getElementById('bgMusic').play();
-">
-  Bật nhạc 🎵
-</button>
+<script>
+  const bgMusic = document.getElementById("bgMusic");
+
+  bgMusic.volume = 0.3;
+  bgMusic.play().catch(() => {});
+</script>
   </body>
 </html>
