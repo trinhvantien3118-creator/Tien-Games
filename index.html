@@ -44,6 +44,16 @@
       left: 65%;
       background-color: brown;
       ">Introduce</button>
-    <audio src="Fur-Elise.mp3" autoplay muted loop></audio>
+    <audio id="bgMusic" src="Fur-Elise.mp3" autoplay muted loop></audio>
+
+<script>
+  const music = document.getElementById("bgMusic");
+
+  music.play();
+
+  setTimeout(() => {
+    music.muted = false;
+  }, 1000);
+</script>
   </body>
 </html>
