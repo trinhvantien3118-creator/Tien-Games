@@ -22,7 +22,6 @@
         transform: scale(0.95);
       }
     </style>
-    <audio id="bgMusic" src="Fur-Elise.mp3" loop></audio>
   </head>
   <body>
     <h1 style="text-align: center; color: lightblue;">
@@ -46,14 +45,12 @@
       background-color: brown;
       ">Introduce</button>
 
-    <script>
-  const bgMusic = document.getElementById("bgMusic");
+    <audio id="bgMusic" src="Fur-Elise.mp3" loop></audio>
 
-  bgMusic.volume = 0.3;
-
-  bgMusic.play().catch(() => {
-    console.log("nah");
-  });
-</script>
+<button onclick="
+  document.getElementById('bgMusic').play();
+">
+  Bật nhạc 🎵
+</button>
   </body>
 </html>
