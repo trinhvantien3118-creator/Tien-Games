@@ -29,7 +29,7 @@
     </style>
   </head>
   <body>
-    <div id="1">
+    <div id="Main">
     <h1 style="text-align: center; color: lightblue;">
     Welcome to Tien Games🥳
     </h1> <hr>
@@ -56,15 +56,45 @@
       ">Introduce</button>
     </div>
     <audio src="Fur-Elise.mp3" controls autoplay loop></audio>
+
+    <div id="Games">
+      <h1 style="
+        color: brown;
+        text-align: center;
+        ">
+        Games</h1>
+    </div>
+
+    <div id="Tutor">
+      <h1 style="
+        color: blue;
+        text-align: center;
+        ">
+        Tutorial</h1>
+    </div>
     
-    <div id="3">
-      
+    <div id="Intro">
+      <h1 style="
+        color: lightblue;
+        text-align: center;
+        ">
+        Introduce</h1>
     </div>
 
     <script>
+      function OG() {
+        document.getElementById("Main").style.display = "none";
+        document.getElementById("Games").style.display = "block";
+      }
+
+      function OT() {
+        document.getElementById("Main".style.display = "none";
+        document.getElementById("Tutor").style.display = "block";
+      }
+      
       function OI() {
-        document.getElementById("1").style.display = "none";
-        document.getElementById("3").style.display = "block";
+        document.getElementById("Main").style.display = "none";
+        document.getElementById("Intro").style.display = "block";
       }
     </script>
   </body>
