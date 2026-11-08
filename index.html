@@ -29,6 +29,9 @@
     </style>
   </head>
   <body>
+    
+ <!-- Div main ở đây nhe -->
+    
     <div id="Main">
     <h1 style="text-align: center; color: lightblue;">
     Welcome to Tien Games🥳
@@ -57,21 +60,37 @@
     </div>
     <audio src="Fur-Elise.mp3" controls autoplay loop></audio>
 
+<!-- Div games ở đây nhe -->
+    
     <div id="Games" style="display: none;">
       <h1 style="
         color: brown;
         text-align: center;
         ">
         Games</h1>
+      <button onclick="OM()"
+      class="butt" style="
+      left: 5%;
+      background-color: orange;
+      ">Get Back🔙</button>
     </div>
 
+ <!-- Div tutorial ở đây nhe -->
+    
     <div id="Tutor" style="display: none;">
       <h1 style="
         color: blue;
         text-align: center;
         ">
         Tutorial</h1>
+      <button onclick="OM()"
+      class="butt" style="
+      left: 5%;
+      background-color: orange;
+      ">Get Back🔙</button>
     </div>
+
+<!-- Div introduce ở đây nhe -->
     
     <div id="Intro" style="display: none;">
       <h1 style="
@@ -79,9 +98,20 @@
         text-align: center;
         ">
         Introduce</h1>
+      <button onclick="OM()"
+      class="butt" style="
+      left: 5%;
+      background-color: orange;
+      ">Get Back🔙</button>
     </div>
 
     <script>
+      function OM() {
+        document.getElementById("Main").style.display = "block";
+        document.getElementById("Games").style.display = "none";
+        document.getElementById("Tutor").style.display = "none";
+        document.getElementById("Intro").style.display = "none";
+      }
       function OG() {
         document.getElementById("Main").style.display = "none";
         document.getElementById("Games").style.display = "block";
