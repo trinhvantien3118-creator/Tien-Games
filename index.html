@@ -45,5 +45,15 @@
       left: 65%;
       background-color: brown;
       ">Introduce</button>
+
+    <script>
+  const bgMusic = document.getElementById("bgMusic");
+
+  bgMusic.volume = 0.3;
+
+  bgMusic.play().catch(() => {
+    console.log("nah");
+  });
+</script>
   </body>
 </html>
